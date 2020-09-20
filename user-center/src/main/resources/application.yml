@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-center
+  datasource:
+    url: jdbc:mysql://rm-bp13q0jl95pd4zo279o.mysql.rds.aliyuncs.com:3306/user
+    hikari:
+      username: wzw
+      password: cM8E!c_89iz2LKV
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
